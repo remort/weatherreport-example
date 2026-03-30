@@ -1,2 +1,48 @@
-# weatherreport-example
-A test task to show work with external APIs in a form of a command line tool
+# Weather Report Command Line Tool
+
+Простой консольный скрипт для получения текущей погоды в любом городе мира.
+Использует бесплатное API [Open-Meteo](https://open-meteo.com) без необходимости в API ключе.
+
+## Возможности
+
+- Получение текущей температуры в градусах Цельсия
+- Текстовое описание погоды на русском языке
+- Поддержка городов на любом языке
+- Автоматическое определение координат по названию города
+- Обработка ошибок и таймаутов
+- Корректное завершение при `Ctrl+C`
+
+## Требования
+
+- Python 3.7 или выше
+- Библиотека `requests`
+
+## Установка
+
+1. Клонируйте репозиторий или скачайте скрипт:
+
+```
+git clone https://github.com/yourusername/weather-script.git
+cd weather-script
+```
+
+2. Установите зависимости
+
+```
+pip install requests
+```
+
+3. Сделайте скрипт исполняемым:
+
+```
+chmod +x weather.py
+```
+
+## Использование
+
+```
+./weather.py Москва
+./weather.py Moscow
+./weather.py Санкт-Петербург
+./weather.py "Saint Petersburg"
+```
